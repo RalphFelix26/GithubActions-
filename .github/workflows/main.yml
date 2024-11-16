@@ -21,7 +21,7 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         source: ./
-        target: /home/ubuntu
+        target: /home/ec2-user
 
     - name: COPY files from /home/ec2-user to /var/www/html
       uses: appleboy/ssh-action@v1.1.0
